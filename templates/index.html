@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoga Pose Game</title>
+  <style>
+    #video, #output {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 640px;
+      height: 480px;
+    }
+    #video {
+      opacity: 0; /* Hide the video element since we're displaying the processed frames */
+    }
+  </style>
+</head>
+<body>
+  <h1>Yoga Pose Game</h1>
+  <video id="video" autoplay></video>
+  <img id="output" />
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
